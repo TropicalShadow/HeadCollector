@@ -1,0 +1,7 @@
+name: HeadCollector
+version: @version@
+main: tk.tropicaldan.headcollector.HeadCollector
+api-version: 1.16
+authors: [TropicalShadow]
+description: Collect Members heads and use them as trophies or even sell them
+website: github.tropicalshadow.codes
