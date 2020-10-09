@@ -25,8 +25,23 @@ public class Config {
         }
         YamlConfiguration YamlConfig = YamlConfiguration.loadConfiguration(ConfigFile);
         plugin.setVERSION((String) YamlConfig.get("Version"));
-
-
+    }
+    public Object get(String key){
+        File ConfigFile = new File(  plugin.getDataFolder(),"config.yaml");
+        YamlConfiguration ConfigYaml = YamlConfiguration.loadConfiguration(ConfigFile);
+        return ConfigYaml.get(key);
+    }
+    public boolean set(String key,Object Value){
+        File ConfigFile = new File(  plugin.getDataFolder(),"config.yaml");
+        YamlConfiguration ConfigYaml = YamlConfiguration.loadConfiguration(ConfigFile);
+        ConfigYaml.set(key,Value);
+        try {
+            ConfigYaml.save(ConfigFile);
+        }catch(Exception e){
+            e.printStackTrace();
+            return false;
+        }
+        return true;
 
     }
 
