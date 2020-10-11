@@ -5,3 +5,8 @@ api-version: 1.16
 authors: [TropicalShadow]
 description: Collect Members heads and use them as trophies or even sell them
 website: github.tropicalshadow.codes
+
+commands:
+  headcollector:
+    description: "root command for plugin"
+    usage: "Usage: /<command> [giveEnchant]"

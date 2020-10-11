@@ -1,0 +1,6 @@
+Version: "0.0.1"
+
+AutoPickUp:
+  NoRoomMessage: "No Room in your inventory for this head."
+  Death: false
+  Mine: true
